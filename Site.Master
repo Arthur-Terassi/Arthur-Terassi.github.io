@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication3.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Disparo 0</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/Projeto.css" rel="stylesheet" />
+    <link href="Css/StyleSheet.css" rel="stylesheet" />
+    <!-- recursos para exibir slides na página -->
+    <script src="javascript/jquery-1.7.2.min.js"></script>
+    <script src="javascript/flexslider.min.js"></script>
+    <link href="javascript/flexslider.css" rel="stylesheet" />
+    <link rel="icon" type="image/jpg" href="Images/icone2.png" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <!-- CABEÇALHO -->
+        <div class="cabecalho">
+            <!-- LOGOMARCA -->
+            <div class="logomarca">
+                <asp:Image ID="Logomarca" ImageUrl="~/Images/icone2.png" CssClass="logomarca" runat="server" />
+            </div>
+            <!-- BARRA TÍTULO -->
+            <div class="barra-titulo">
+                DISPARO 0 
+            </div>
+            <!--  BARRA MENU -->
+            <div class="barra-menu">
+                <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Default.aspx" runat="server">HOME</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" NavigateUrl="~/ExibirProdutos.aspx" runat="server">PRODUTOS</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink3" NavigateUrl="~/Galeria.aspx" runat="server">CATÁLOGO</asp:HyperLink>
+                <asp:HyperLink NavigateUrl="~/FaleConosco.aspx" ID="HyperLink2" runat="server">CONTATO</asp:HyperLink>
+            </div>
+        </div>
+        <!-- CONTEÚDO -->
+        <div class="conteudo content-wrap">
+            <asp:ContentPlaceHolder ID="Conteudo" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- RODAPÉ -->
+        <div class="rodape">
+            <div class="content-wrap">
+                <row>
+                </row>
+
+
+                <h3>Analise e Desenvolvimento de Sistemas</h3>
+                <h5>Faculdade de Tecnologia Ralph Biasi</h5>
+                <h6>Americana - SP</h6>
+                <h6>Prof.  Diógenes</h6>
+                <h6>Desenvolvido por: Arthur Terassi Dantzger & Yasmin Vital Terrestre</h6>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
